@@ -9,7 +9,7 @@ using KSP.Sim.impl;
 
 namespace LazyOrbit
 {
-    [BepInPlugin("io.bepis.LessWobbly", "LessWobbly", "1.0")]
+    [BepInPlugin("io.bepis.lesswobbly", "LessWobbly", "1.0")]
     public class LessWobbly : BaseUnityPlugin
     {
         static bool loaded = false;
@@ -21,7 +21,7 @@ namespace LazyOrbit
 
         private static GUIStyle boxStyle;
 
-        float lessWobbly = PhysicsSettings.JOINT_RIGIDITY;
+        float lessWobbly = 1500f;
 
         public  void Initialize()
         {
@@ -31,7 +31,7 @@ namespace LazyOrbit
             }
 
             loaded = true;
-            lessWobbly = PhysicsSettings.JOINT_RIGIDITY;
+            //lessWobbly = PhysicsSettings.JOINT_RIGIDITY;
         }
 
         void Awake()
@@ -57,7 +57,7 @@ namespace LazyOrbit
 
         void Update()
         {
-            if (Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.J))
+            if ((Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt)) && Input.GetKeyDown(KeyCode.J))
                 drawUI = !drawUI;
         }
 
