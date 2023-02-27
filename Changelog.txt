@@ -5,3 +5,9 @@ Changelog
 
 0.0.1.1
 	Fixed nullref due to unfamiliarity with new KSP2
+
+0.0.2 (unreleased)
+	Fixed title
+	Added JointBreakForceFactor
+	Added Reset button
+	Added automatic saving/loading of entered data

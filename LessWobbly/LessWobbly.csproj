@@ -43,6 +43,9 @@
       <HintPath>R:\KSP2_0.1.0\BepInEx\core\BepInEx.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>R:\KSP2_0.1.0\KSP2_x64_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="UnityEngine">
@@ -59,6 +62,9 @@
     <Reference Include="UnityEngine.InputLegacyModule">
       <HintPath>R:\KSP2_0.1.0\KSP2_x64_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>R:\KSP2_0.1.0\KSP2_x64_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
